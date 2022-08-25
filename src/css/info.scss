@@ -1,0 +1,49 @@
+@import "_variables";
+
+.info {
+    display: block;
+    text-align: center;
+    .author-avatar {
+      max-width: 10em;
+      width: 40%;
+      display: block;
+      margin: 1em auto;
+      border: 20px solid;
+      border-image:url("/images/border.svg");
+      border-image-slice:180;
+      transition: 1s ease-in-out;
+    }
+    .author-name {
+      color: $color-foreground;
+      font-size: 1em;
+      font-weight: bold;
+      margin: 0.5em 0;
+    }
+    .author-description {
+      color: $color-foreground;
+      font-size: 0.9em;
+      font-weight: normal;
+      margin: 0.5em 0;
+    }
+
+    .info-social {
+        font-size: 1.5em;
+        
+        a {
+            color: $color-foreground;
+            margin-right: 0.5em;
+
+            .fa-envelope {
+                font-size: 0.9em;
+                position: relative;
+                top: -1px;
+            }
+
+            .fa-twitch {
+              font-size: 0.9em;
+              position: relative;
+              top: 1px;
+          }
+        }
+    }
+}

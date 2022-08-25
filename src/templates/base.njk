@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDKV6995P9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EDKV6995P9');
+    </script>
+    <meta charset="utf-8"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
+    <title>ByteWeasel.com{% if title %} - {{title}}{% endif %}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"></link>
+    <link rel="stylesheet" href="/css/atom-dark-prism.css"></link>
+    <link rel="stylesheet" href="/css/styles.css"></link>
+    <script src="/scripts/velocity.js"></script>
+    <script src="/scripts/index.js"></script>
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    {% include "header.njk" %}
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="content">
+            {% block content %}{% endblock %}
+          </div>
+          {% include "sidebar.njk" %}
+        </div>
+      </div>
+    </main>
+    {% include "footer.njk" %}
+</body>
+</html>

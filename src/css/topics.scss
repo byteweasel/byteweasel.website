@@ -1,0 +1,25 @@
+@import "_variables";
+
+.topic-list {
+    list-style-image: 
+    a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a.link {
+        &::after {
+          height: 1px; 
+        }
+    }
+}
+
+.allTopics {
+    margin-left: 1.8em;
+    .post-tag {
+        margin-right: 0.4em;
+        i {
+          padding-right: 0.4em;
+        }
+    }
+}

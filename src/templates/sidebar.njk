@@ -1,0 +1,20 @@
+{% block sidebar %}
+<aside class="sidebar" id="sidebar">
+  <div class="search">
+    <div class="form-group">
+<script async src="https://cse.google.com/cse.js?cx=7799a9a6c4afe48d1">
+</script>
+<div class="gcse-search"></div>
+    </div>
+  </div>
+  <div class="search-result-box" id="search-result"></div>
+  {% include "info.njk" %}
+  <div class="twitter">
+    <a class="twitter-timeline" data-theme="light" href="https://twitter.com/ByteWeasel?ref_src=twsrc%5Etfw">Loading Tweets...</a> 
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  <div class="sidebar-sticky">
+    <hr>
+  </div>
+</aside>
+{% endblock %}

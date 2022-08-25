@@ -1,0 +1,46 @@
+{
+  "name": "byteweasel.website",
+  "version": "1.0.0",
+  "description": "A personal website hosted at http://www.byteweasel.com created using metalsmith",
+  "author": "ByteWeasel",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+http://github.com/ByteWeasel/byteweasel.website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ByteWeasel/byteweasel.website/issues"
+  },
+  "homepage": "https://github.com/ByteWeasel/byteweasel.website",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js serve",
+    "deploy": "deploy.bat"
+  },
+  "type": "module",
+  "devDependencies": {
+    "eslint": "8.22.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.26.0"
+  },
+  "dependencies": {
+    "browser-sync": "2.27.10",
+    "jstransformer-nunjucks": "1.1.0",
+    "marked": "4.0.19",
+    "metalsmith": "2.5.0",
+    "metalsmith-beautify": "0.2.0",
+    "metalsmith-date-formatter": "1.0.2",
+    "metalsmith-markdown": "1.3.0",
+    "metalsmith-pagination": "1.5.0",
+    "metalsmith-prism": "4.0.0",
+    "metalsmith-sass": "2.0.0",
+    "metalsmith-sitemap": "1.2.2",
+    "moment": "2.29.4",
+    "multimatch": "6.0.0",
+    "@metalsmith/table-of-contents": "1.0.0",
+    "@metalsmith/collections": "1.2.2",
+    "@metalsmith/excerpts": "1.5.1",
+    "@metalsmith/layouts": "2.5.1",
+    "@metalsmith/permalinks": "2.4.0"
+  }
+}

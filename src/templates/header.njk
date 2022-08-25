@@ -1,0 +1,37 @@
+{% block header %}
+<header class="header">
+  <div class="container">
+    <div class="header-container">
+      <div class="header-title">
+        <h1 class="title">The ByteWeasel</a></h1>
+        <h2 id="title-quote" class="subtitle"></h2>
+      </div>
+      <div class="logo">
+      </div>
+    </div>
+    <div class="nav-container">
+      <nav id="nav" class="nav">
+        <a id="nav-toggle" class="nav-toggle" aria-hidden="true"><i class="fa fa-bars"></i></a>
+        <ul id="menu" role="menubar" aria-hidden="false">
+          {% for name, uri in mainMenu %}
+          <li role="menuitem" {%
+            if (uri == '/' and path.slice(0, 5) == 'pages') or
+            (uri == '/' and path == '') or
+            (uri != '/' and '/' + path.slice(0, uri.length -1) == uri)
+          %}
+            class="current"
+          {% endif %}><a href="{{ uri }}">{{ name }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <div class="nav-social">
+        <a href="https://github.com/ByteWeasel" target="_blank" title="github.com/ByteWeasel"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/ByteWeasel" target="_blank" title="twitter.com/@ByteWeasel"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/" target="_blank" title="youtube.com/ByteWeasel"><i class="fa fa-youtube-play"></i></a>
+        <a href="https://www.twitch.tv/byteweasel" target="_blank" title="twitch.tv/byteweasel"><i class="fa fa-twitch"></i></a>
+        <a href="mailto:web@byteweasel.com" target="_blank" title="email"><i class="fa fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock %}
