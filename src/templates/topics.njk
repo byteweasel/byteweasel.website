@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="topics">
-    <div id="post" class="page">
+    <div class="page">
         <article class="article post card" itemscope itemtype="http://schema.org/Article">
             <div class="post-block">
             <link itemprop="mainEntityOfPage" href="{{ '/' + path }}">
@@ -22,7 +22,7 @@
         </article>
     </div>
     {% for tag, topic in allTopics %}
-    <div id="post" class="page">
+    <div class="page">
         <article class="article post card" itemscope itemtype="http://schema.org/Article">
             <div class="post-block">
             <link itemprop="mainEntityOfPage" href="{{ '/' + path }}">
