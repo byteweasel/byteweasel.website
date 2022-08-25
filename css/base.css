@@ -1,0 +1,103 @@
+html,
+body,
+.container {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0
+}
+
+body {
+	color: #555;
+	background: #fbfbf6;
+	font: 14px -apple-system, BlinkMacSystemFont, Quicksand, Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	word-wrap: break-word;
+	display: flex;
+	min-height: 100%;
+	flex-direction: column
+}
+
+.main {
+	margin-top: 3em
+}
+
+.main .main-container {
+	width: auto;
+	box-sizing: border-box;
+	border-radius: bottom .3em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-wrap: nowrap;
+	padding: 0
+}
+
+.main .main-container .content {
+	flex: 1 0 auto;
+	width: 75%
+}
+
+@media (max-width: 60em) {
+	.main .main-container {
+		flex-direction: column
+	}
+
+	.main .main-container .content {
+		width: 100%
+	}
+}
+
+.container {
+	padding: 0;
+	max-width: 90em;
+	width: 100%;
+	margin: 0 auto
+}
+
+.card {
+	display: block;
+	background: #fbfbf6;
+	transition: 0.2s ease-in-out;
+	box-sizing: border-box;
+	border-radius: .3em;
+	padding: 1.5em 1.5em;
+	margin: 0.5em;
+	border: 20px solid;
+	border-image: url("/images/border-card.svg");
+	border-image-slice: 60
+}
+
+a {
+	color: #094771
+}
+
+.post-tag {
+	color: #094771
+}
+
+a.link {
+	color: #094771;
+	display: inline-block;
+	text-decoration: none;
+	transition: 0.2s ease-in;
+	position: relative
+}
+
+a.link::after {
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 0.1em;
+	bottom: 0;
+	left: 0;
+	background: #555;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: 0.3s ease-in-out
+}
+
+a.link:hover::after {
+	visibility: visible;
+	transform: scaleX(1)
+}

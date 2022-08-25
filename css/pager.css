@@ -1,0 +1,13 @@
+.pager {
+	width: 100%;
+	text-align: center
+}
+
+.pager .pager-container {
+	display: inline-block;
+	font-weight: bold
+}
+
+.pager .pager-container a.pager-current {
+	text-decoration: none
+}

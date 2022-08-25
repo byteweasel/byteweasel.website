@@ -1,0 +1,88 @@
+.footer {
+	background: #1e1e1e;
+	color: #eee;
+	margin-top: 1.5em
+}
+
+.footer .footer-container {
+	font-size: 0.8em;
+	width: auto;
+	word-wrap: break-word;
+	line-height: 2em;
+	padding: 0 2em 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: nowrap
+}
+
+.footer .footer-container .footer-left {
+	flex: 1 0 auto;
+	text-align: left;
+	width: 50%
+}
+
+.footer .footer-container .footer-right {
+	flex: 1 0 auto;
+	text-align: right;
+	width: 50%
+}
+
+.footer a {
+	position: relative;
+	color: #eee;
+	text-decoration: none;
+	transition: 0.3s ease-in-out
+}
+
+.footer a:hover {
+	color: #fff
+}
+
+.footer a:active {
+	top: 0.1em
+}
+
+.footer .cc {
+	font-size: 0.9em
+}
+
+.footer .back-to-top {
+	display: block;
+	text-align: center
+}
+
+.footer .back-to-top button {
+	border: none;
+	outline: 0;
+	background: transparent;
+	color: #eee;
+	overflow: hidden;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0 0.5em 0.2em;
+	cursor: pointer;
+	border-radius: .3em;
+	font-size: 1em;
+	margin-top: -2px
+}
+
+.footer .back-to-top button:hover {
+	background-color: #3C3C3C
+}
+
+.footer .footer-container {
+	flex-direction: column-reverse;
+	align-items: stretch
+}
+
+.footer .footer-container .footer-left {
+	text-align: center;
+	width: auto
+}
+
+.footer .footer-container .footer-right {
+	text-align: center;
+	width: auto
+}

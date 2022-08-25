@@ -1,0 +1,77 @@
+.post .post-header {
+	text-align: left
+}
+
+.post .post-header .post-title {
+	font-size: 2em;
+	font-style: bold;
+	margin: -0.2em 0 0.2em
+}
+
+.post .post-header .post-title-simple {
+	margin: 0
+}
+
+.post .post-header .post-title .post-title-link {
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	border-bottom: none;
+	color: #555
+}
+
+.post .post-header .post-meta span {
+	margin: 0 0.1em
+}
+
+.post .post-header .post-tags .post-divider {
+	color: #999
+}
+
+.post .post-header .post-tags .post-tag i {
+	padding-right: 0.4em
+}
+
+.post .post-main {
+	line-height: 1.6em
+}
+
+.post .post-main a.headerlink {
+	border: none
+}
+
+.post .post-main a.headerlink:hover {
+	border: none
+}
+
+.post .post-main a.headerlink:active {
+	top: 0
+}
+
+.post .post-main a.headerlink::before {
+	content: "#";
+	margin-right: 0.3em
+}
+
+.post .post-main .image-container {
+	overflow: hidden;
+	display: flex;
+	justify-content: center
+}
+
+.post .post-main .code-section {
+	background-color: #cfb286
+}
+
+.post .post-footer {
+	text-align: center
+}
+
+.post .post-footer a.link.post-more-link {
+	color: #094771
+}
+
+.comments-section {
+	margin: 0.75em;
+	margin-top: 2em
+}

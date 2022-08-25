@@ -1,0 +1,21 @@
+.topic-list {
+	list-style-image: a;
+	list-style-image-text-decoration: none;
+	list-style-image-font-weight: bold
+}
+
+.topic-list a.link::after {
+	height: 1px
+}
+
+.allTopics {
+	margin-left: 1.8em
+}
+
+.allTopics .post-tag {
+	margin-right: 0.4em
+}
+
+.allTopics .post-tag i {
+	padding-right: 0.4em
+}

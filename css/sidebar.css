@@ -1,0 +1,168 @@
+.sidebar {
+	flex: 1 0 auto;
+	width: 25%;
+	padding: 0;
+	margin-top: 0.55em;
+	word-wrap: break-word
+}
+
+.sidebar .search {
+	display: block;
+	text-align: center;
+	background: #fbfbf6;
+	color: #262626;
+	border: 20px solid;
+	border-image: url("/images/border.svg");
+	border-image-slice: 180
+}
+
+.sidebar .search .gsc-control-cse {
+	padding: 0;
+	background: #fbfbf6;
+	border-color: #fbfbf6
+}
+
+.sidebar .search .gsc-input-box {
+	background: #fbfbf6;
+	border-color: #fbfbf6
+}
+
+.sidebar .search .cse input.gsc-input,
+.sidebar .search input.gsc-input {
+	font-size: 1em;
+	font-family: -apple-system, BlinkMacSystemFont, Quicksand, Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	border-bottom: 0.1em solid #262626 !important
+}
+
+.sidebar .search .gsc-search-button-v2,
+.sidebar .search .gsc-search-button-v2:hover,
+.sidebar .search .gsc-search-button-v2:focus {
+	padding: 0;
+	margin-top: 8px;
+	background: #fbfbf6;
+	border-color: #fbfbf6
+}
+
+.sidebar .search .gsc-search-button-v2 svg {
+	fill: #262626
+}
+
+.sidebar .search .gsst_a {
+	padding: 0
+}
+
+.sidebar .search .gscb_a {
+	font: 1em -apple-system, BlinkMacSystemFont, Quicksand, Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+}
+
+.sidebar .search .gsc-webResult .gsc-result {
+	border-left: 1px solid transparent
+}
+
+.sidebar .search .gsc-webResult.gsc-result:hover {
+	border-bottom: 1px solid transparent !important
+}
+
+.sidebar .search .fa-search {
+	padding-right: 0.3em
+}
+
+.sidebar .search input {
+	width: 70%;
+	height: 1.8em;
+	border: none;
+	border-bottom: 0.1em solid #262626;
+	background: #fbfbf6;
+	color: #262626;
+	transition: 0.3s ease-in-out
+}
+
+.sidebar .search input:focus {
+	outline: none;
+	border-bottom: 0.1em solid #262626
+}
+
+.sidebar .search input::placeholder {
+	color: #262626;
+	opacity: 0.7
+}
+
+.sidebar .search::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	color: #262626
+}
+
+.sidebar .search-result-box {
+	background: #fbfbf6;
+	word-wrap: break-word;
+	transition: 0.3s ease-in-out
+}
+
+.sidebar .search-result-box .search-result-list {
+	margin-top: 0;
+	padding: 1em 1em 1em 2em
+}
+
+.sidebar .search-result-box:hover {
+	box-shadow: 0 0.5em 1em 0.5em rgba(0, 0, 0, 0.19)
+}
+
+.sidebar .sidebar-item {
+	margin: 1em
+}
+
+.sidebar .twitter {
+	margin-top: 0.6em;
+	min-height: 400px
+}
+
+.sidebar .twitter a {
+	color: #fbfbf6;
+	text-decoration: none
+}
+
+.sidebar .sidebar-sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	padding-bottom: 1em
+}
+
+.sidebar .post-toc .toc-link.active {
+	color: #999;
+	border-bottom: 0.05em solid #999
+}
+
+.sidebar hr {
+	background: repeating-linear-gradient(-45deg, #fff, #fff 0.25em, transparent 0.25em, transparent 0.5em)
+}
+
+@media (max-width: 60em) {
+	.sidebar {
+		width: calc(100% - 1em);
+		margin: 0 auto;
+		padding-top: 2em
+	}
+
+	.sidebar .sidebar-item {
+		text-align: center
+	}
+
+	.sidebar .sidebar-item ul {
+		padding: 0
+	}
+
+	.sidebar .sidebar-item ul li {
+		display: inline-block;
+		margin: 0.5em 1em
+	}
+
+	.sidebar .sidebar-item .toc {
+		text-align: left;
+		display: inline-block
+	}
+
+	.sidebar .sidebar-sticky {
+		position: static
+	}
+}

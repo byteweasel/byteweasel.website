@@ -1,0 +1,77 @@
+.header {
+	flex: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	background: #cfb286;
+	color: #262626
+}
+
+.header .header-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+	padding: 1.5em 0.5em 0.5em
+}
+
+.header .header-container .header-title {
+	text-align: left;
+	width: 75%;
+	word-wrap: break-word;
+	flex: 1 0 auto;
+	color: #262626
+}
+
+.header .header-container .header-title a {
+	color: #262626;
+	text-decoration: none;
+	border-bottom: none
+}
+
+.header .header-container .header-title a:hover {
+	color: #262626;
+	border-bottom: none
+}
+
+.header .header-container .header-title a:active {
+	top: 0
+}
+
+.header .header-container .header-title .title {
+	font: normal 2.9em -apple-system, BlinkMacSystemFont, Quicksand, Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	margin: 0 0 0 0
+}
+
+.header .header-container .header-title .subtitle {
+	font: normal 1.2em -apple-system, BlinkMacSystemFont, Quicksand, Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	margin: 0.2em 0 1em 0
+}
+
+.header .header-container .logo {
+	text-align: center;
+	width: 25%;
+	flex: 1 0 auto
+}
+
+.header .header-container .logo img {
+	display: inline-block;
+	max-width: 8em;
+	width: 100%
+}
+
+@media (max-width: 40em) {
+	.header .header-container {
+		flex-direction: column-reverse
+	}
+
+	.header .header-container .header-title {
+		text-align: center;
+		width: auto
+	}
+
+	.header .header-container .logo {
+		text-align: center;
+		width: auto
+	}
+}

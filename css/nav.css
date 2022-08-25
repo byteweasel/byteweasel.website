@@ -1,0 +1,143 @@
+.nav-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-wrap: nowrap
+}
+
+.nav-container .nav-social {
+	display: none;
+	font-size: 1.5em
+}
+
+.nav-container .nav-social a {
+	color: #fbfbf6;
+	margin-right: 0.5em
+}
+
+.nav-container .nav-social a .fa-envelope {
+	font-size: 0.9em;
+	position: relative;
+	top: -1px
+}
+
+@media (max-width: 60em) {
+	.header .nav-container {
+		flex-direction: column-reverse;
+		text-align: center
+	}
+
+	.header .nav-container .nav-social {
+		width: 100%
+	}
+}
+
+.nav {
+	position: relative;
+	margin: 0;
+	padding: 0 0.5em;
+	border-radius: top .3em;
+	display: block;
+	font-weight: 800
+}
+
+.nav ul {
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+
+.nav ul li {
+	line-height: 2em;
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	margin: 0 0.1em;
+	border: 10px solid;
+	border-image: url("/images/tab.svg");
+	border-image-slice: 240;
+	border-bottom: 0
+}
+
+.nav ul li a {
+	position: relative;
+	display: block;
+	font-size: 1em;
+	padding: 0.4em 0.8em;
+	color: #262626;
+	text-decoration: none;
+	text-shadow: 0 0.05em rgba(0, 0, 0, 0.2);
+	border-bottom: none;
+	background: #cfb286
+}
+
+.nav ul li a:active {
+	top: 0
+}
+
+.nav ul li:hover {
+	border-image-source: url("/images/tab-current.svg")
+}
+
+.nav ul li:hover a {
+	color: #262626;
+	background: #fbfbf6
+}
+
+.nav ul li.current {
+	color: #262626;
+	border-image-source: url("/images/tab-current.svg")
+}
+
+.nav ul li.current a {
+	background: #fbfbf6
+}
+
+.nav .nav-toggle {
+	text-align: center;
+	font-size: 2em;
+	position: relative;
+	cursor: pointer;
+	color: #262626;
+	display: none;
+	width: 100%;
+	text-align: center;
+	border-bottom: none
+}
+
+.nav .nav-toggle:hover {
+	border-bottom: none;
+	color: #262626
+}
+
+@media (max-width: 40em) {
+	.nav .nav-toggle {
+		display: block
+	}
+
+	.nav #menu {
+		display: none
+	}
+
+	.nav ul {
+		display: none
+	}
+
+	.nav ul li {
+		display: block;
+		text-align: center;
+		margin: 0.1em 0
+	}
+
+	.nav ul li a {
+		position: relative;
+		border-bottom: none
+	}
+
+	.nav ul li a:hover {
+		color: #262626;
+		background: #fbfbf6
+	}
+}
